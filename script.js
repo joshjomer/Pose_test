@@ -5,6 +5,7 @@ import {
   } from "https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0";   
 
   let poseLandmarker = undefined;
+  let runningMode = "IMAGE";
   
   const createPoseLandmarker = async () => {
     const vision = await FilesetResolver.forVisionTasks(
@@ -37,7 +38,7 @@ const hasGetUserMedia = () => !!navigator.mediaDevices?.getUserMedia;
 // If webcam supported, add event listener to button for when user
 // wants to activate it.
 if (hasGetUserMedia()) {
-    enableWebcamButton = document.getElementById("webcamButton");
+    let enableWebcamButton = document.getElementById("webcamButton");
     enableWebcamButton.addEventListener("click", enableCam);
   } else {
     console.warn("getUserMedia() is not supported by your browser");
