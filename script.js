@@ -3,7 +3,7 @@ import {
     FilesetResolver,
     DrawingUtils
   } from "https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0";   
-  
+
   let poseLandmarker = undefined;
   
   const createPoseLandmarker = async () => {
@@ -41,7 +41,7 @@ if (hasGetUserMedia()) {
     enableWebcamButton.addEventListener("click", enableCam);
   } else {
     console.warn("getUserMedia() is not supported by your browser");
-  }
+  }  
 
 
 
