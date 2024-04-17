@@ -20,7 +20,7 @@ import {
       runningMode: runningMode,
       numPoses: 2
     });
-    demosSection.classList.remove("invisible");
+    
   };
   createPoseLandmarker();
   
