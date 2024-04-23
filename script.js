@@ -32,18 +32,18 @@ const canvasCtx = canvasElement.getContext("2d");
 const drawingUtils = new DrawingUtils(canvasCtx);
 
 
-const hasGetUserMedia = () => !!navigator.mediaDevices?.getUserMedia;
+//const hasGetUserMedia = () => !!navigator.mediaDevices?.getUserMedia;
 
 
 
 // If webcam supported, add event listener to button for when user
 // wants to activate it.
-if (hasGetUserMedia()) {
+//if (hasGetUserMedia()) {
     enableWebcamButton = document.getElementById("webcamButton");
     enableWebcamButton.addEventListener("click", enableCam);
-  } else {
-    console.warn("getUserMedia() is not supported by your browser");
-  }  
+//  } else {
+//    console.warn("getUserMedia() is not supported by your browser");
+//  }  
 
 
 
