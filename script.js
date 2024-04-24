@@ -95,7 +95,7 @@ async function predictWebcam() {
   }
 
   // Call this function again to keep predicting when the browser is ready.
-  if (webcamRunning === true) {
+  //if (webcamRunning === true) {
     window.requestAnimationFrame(predictWebcam);
-  }
+  //}
 }
