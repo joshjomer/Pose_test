@@ -84,6 +84,7 @@ async function predictWebcam() {
     poseLandmarker.detectForVideo(video, startTimeMs, (result) => {
       canvasCtx.save();
       canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+      console.log(result.landmarks);  
       for (const landmark of result.landmarks) {
         /*drawingUtils.drawLandmarks(landmark, {
           radius: (data) => DrawingUtils.lerp(data.from!.z, -0.15, 0.1, 5, 1)
