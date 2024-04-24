@@ -39,8 +39,8 @@ const drawingUtils = new DrawingUtils(canvasCtx);
 // If webcam supported, add event listener to button for when user
 // wants to activate it.
 //if (hasGetUserMedia()) {
-    enableWebcamButton = document.getElementById("webcamButton");
-    enableWebcamButton.addEventListener("click", enableCam);
+//    enableWebcamButton = document.getElementById("webcamButton");
+//    enableWebcamButton.addEventListener("click", enableCam);
 //  } else {
 //    console.warn("getUserMedia() is not supported by your browser");
 //  }  
@@ -48,7 +48,7 @@ const drawingUtils = new DrawingUtils(canvasCtx);
 
 
 // Enable the live webcam view and start detection.
-function enableCam(event) {
+//function enableCam(event) {
   
     // getUsermedia parameters.
     const constraints = {
@@ -59,8 +59,8 @@ function enableCam(event) {
     navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
       video.srcObject = stream;
       video.addEventListener("loadeddata", predictWebcam);
-    });
-  }
+  //  });
+  //}
   
 
 
