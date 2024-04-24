@@ -7,6 +7,8 @@ import {
   let poseLandmarker = undefined;
   let enableWebcamButton = undefined;
   let runningMode = "IMAGE";
+  const videoHeight = "360px";
+  const videoWidth = "480px";
   
   const createPoseLandmarker = async () => {
     const vision = await FilesetResolver.forVisionTasks(
