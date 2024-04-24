@@ -6,7 +6,7 @@ import {
 
   let poseLandmarker = undefined;
   let enableWebcamButton = undefined;
-  let runningMode = "IMAGE";
+  let runningMode = "VIDEO";
   const videoHeight = "360px";
   const videoWidth = "480px";
   
@@ -74,10 +74,10 @@ async function predictWebcam() {
   canvasElement.style.width = videoWidth;
   video.style.width = videoWidth;
   // Now let's start detecting the stream.
-  if (runningMode === "IMAGE") {
-    runningMode = "VIDEO";
-    await poseLandmarker.setOptions({ runningMode: "VIDEO" });
-  }
+  //if (runningMode === "IMAGE") {
+  //  runningMode = "VIDEO";
+  //  await poseLandmarker.setOptions({ runningMode: "VIDEO" });
+  //}
   let startTimeMs = performance.now();
   if (lastVideoTime !== video.currentTime) {
     lastVideoTime = video.currentTime;
