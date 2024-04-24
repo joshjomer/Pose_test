@@ -59,7 +59,7 @@ const drawingUtils = new DrawingUtils(canvasCtx);
     navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
       video.srcObject = stream;
       video.addEventListener("loadeddata", predictWebcam);
-  //  });
+    });
   //}
   
 
